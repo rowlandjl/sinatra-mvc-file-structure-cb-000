@@ -3,7 +3,7 @@ class Dog
   
   def initialize(attributes)
     attributes.each do |key, value|
-      send("#{key}=", value)
+      self.send(("#{key}="), value)
     end 
   end 
   
